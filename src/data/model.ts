@@ -1,18 +1,18 @@
-type Game = {
+export interface Game {
     course: Course,
     players: Player[],
 }
 
-type Course = {
+export interface Course {
     name: string,
     holes: Hole[]
 }
 
-type Hole = {
+export interface Hole {
     par: number
 }
 
-type Player = {
+export interface Player {
     firstName: string,
     lastName: string | undefined,
     scores: number[]
